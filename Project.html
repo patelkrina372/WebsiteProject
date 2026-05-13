@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehsana 24-Hour Guide | Discover North Gujarat</title>
+    <meta name="view-transition" content="same-origin">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #1a1a1a;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        @view-transition {
+            navigation: auto;
+        }
+        .amber-glow {
+            box-shadow: 0 0 40px -10px rgba(245, 158, 11, 0.4);
+        }
+        .timeline-connector::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #f59e0b;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .timeline-connector::before {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-stone-50">
+        
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-stone-100 px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-amber-500 rounded-xl flex items-center justify-center text-white">
+                    <iconify-icon icon="lucide:map-pin" class="text-2xl"></iconify-icon>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-stone-900">Mehsana<span class="text-amber-500">Travel</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" id="nav-home" class="text-sm font-medium hover:text-amber-600 transition-colors">Home</a>
+                <a href="#itinerary" id="nav-itinerary" class="text-sm font-medium hover:text-amber-600 transition-colors">Itinerary</a>
+                <a href="#attractions" id="nav-attractions" class="text-sm font-medium hover:text-amber-600 transition-colors">Attractions</a>
+                <a href="#food" id="nav-food" class="text-sm font-medium hover:text-amber-600 transition-colors">Local Food</a>
+                <a href="#tips" id="nav-tips" class="text-sm font-medium hover:text-amber-600 transition-colors">Travel Tips</a>
+                <a href="login2.html" id="nav-tips" class="text-sm font-medium hover:text-amber-600 transition-colors">Login</a>
+
+            </div>
+            <a href="#booking" id="nav-book-btn" class="bg-stone-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-amber-600 transition-all shadow-lg">Book Guide</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop" alt="Gujarat Heritage" class="w-full h-full object-cover brightness-50">
+            </div>
+            <div class="relative z-10 text-center text-white px-4 max-w-4xl">
+                <span class="inline-block py-1 px-4 bg-amber-500/20 backdrop-blur-sm border border-amber-500/30 rounded-full text-amber-400 text-sm font-bold uppercase tracking-widest mb-6">The Heart of North Gujarat</span>
+                <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight tracking-tight">Explore Mehsana <br><span class="italic text-amber-400">In One Day</span></h1>
+                <p class="text-lg md:text-xl text-stone-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                    From ancient sun temples and spice markets to industrial marvels, witness the golden heritage of Gujarat's most vibrant district.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#itinerary" id="hero-cta-plan" class="bg-amber-500 hover:bg-amber-600 text-stone-900 px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-2xl">View Full Schedule</a>
+                    <a href="#attractions" id="hero-cta-sites" class="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border border-white/30 px-10 py-4 rounded-full font-bold text-lg transition-all">Top Attractions</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- One Day Schedule -->
+        <section id="itinerary" class="py-24 bg-stone-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl font-bold mb-4">The Perfect 24-Hour Loop</h2>
+                    <p class="text-stone-500 max-w-xl mx-auto">A meticulously curated timeline to experience the best of Mehsana without the rush.</p>
+                </div>
+
+                <div class="relative">
+                    <div class="timeline-connector hidden md:block"></div>
+                    
+                    <!-- 6:00 AM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2 md:text-right">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">6:00 AM - 8:30 AM</span>
+                                <h3 class="text-2xl font-bold mb-3">Sunrise at Modhera Sun Temple</h3>
+                                <p class="text-stone-600">Start your day with spiritual energy at this 11th-century architectural masterpiece. Watch the first rays hit the sanctum.</p>
+                            </div>
+                        </div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:sunrise"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2"></div>
+                    </div>
+
+                    <!-- 9:30 AM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2"></div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:coffee"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">9:30 AM - 10:30 AM</span>
+                                <h3 class="text-2xl font-bold mb-3">The "Milk City" Breakfast</h3>
+                                <p class="text-stone-600">Enjoy hot Jalebi-Fafda and Kadhi at the local main market. Mehsana is famous for its milk products and tea culture.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11:30 AM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2 md:text-right">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">11:30 AM - 1:00 PM</span>
+                                <h3 class="text-2xl font-bold mb-3">Unjha Spice Market</h3>
+                                <p class="text-stone-600">A short drive to Unjha, Asia's largest cumin market. The aroma of spices fills the air in this bustling economic hub.</p>
+                            </div>
+                        </div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2"></div>
+                    </div>
+
+                    <!-- 2:00 PM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2"></div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:utensils"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">2:00 PM - 3:30 PM</span>
+                                <h3 class="text-2xl font-bold mb-3">Royal Gujarati Thali</h3>
+                                <p class="text-stone-600">Indulge in an authentic lunch featuring over 15 items including Basundi, local vegetable curries, and Rotla.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5:00 PM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2 md:text-right">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">5:00 PM - 7:00 PM</span>
+                                <h3 class="text-2xl font-bold mb-3">Mohanpura Lake Relaxation</h3>
+                                <p class="text-stone-600">Stroll along the lakeside as the sun sets. A perfect spot for photography and seeing local life unwind.</p>
+                            </div>
+                        </div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:waves"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2"></div>
+                    </div>
+
+                    <!-- 8:30 PM -->
+                    <div class="relative flex flex-col md:flex-row items-center justify-center mb-16 gap-8">
+                        <div class="w-full md:w-1/2"></div>
+                        <div class="z-10 w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white ring-8 ring-stone-50">
+                            <iconify-icon icon="lucide:moon"></iconify-icon>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow">
+                                <span class="text-amber-600 font-bold block mb-2">8:30 PM - 10:00 PM</span>
+                                <h3 class="text-2" font-bold mb-3">Night Market & Street Food</h3>
+                                <p class="text-stone-600">Explore the heritage lanes of Mehsana city. Try the famous Pav Bhaji or local ice creams made from fresh dairy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Major Attractions -->
+        <section id="attractions" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                    <div class="max-w-2xl">
+                        <h2 class="text-5xl font-bold mb-4">Must-Visit Landmarks</h2>
+                        <p class="text-stone-600">Beyond the daily schedule, ensure you don't miss these iconic heritage and cultural sites that define the region.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="p-3 rounded-full border border-stone-200 hover:bg-stone-50 transition-colors"><iconify-icon icon="lucide:arrow-left"></iconify-icon></button>
+                        <button class="p-3 rounded-full bg-amber-500 text-stone-900 hover:bg-amber-600 transition-colors"><iconify-icon icon="lucide:arrow-right"></iconify-icon></button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Attraction 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative h-80 overflow-hidden rounded-3xl mb-6">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.kczr2dN8Xp4gvvmQT_iGTgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Modhera Sun Temple" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold uppercase text-amber-600">Must See</div>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">Modhera Sun Temple</h4>
+                        <p class="text-stone-500 mb-4">Ancient Hindu temple dedicated to Surya, built on the banks of Pushpavati river.</p>
+                        <div class="flex items-center gap-4 text-sm font-medium text-stone-400">
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock"></iconify-icon> 2-3 Hours</span>
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:camera"></iconify-icon> Photography Pro</span>
+                        </div>
+                    </div>
+                    <!-- Attraction 2 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative h-80 overflow-hidden rounded-3xl mb-6">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.e4PO_9sVLhs1zp5T_tDKfQHaEO?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Unjha Bazaar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold uppercase text-amber-600">Local Vibe</div>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">Unjha Spice Bazaar</h4>
+                        <p class="text-stone-500 mb-4">The largest wholesale market for cumin and fennel in Asia. A sensory overload of aromas.</p>
+                        <div class="flex items-center gap-4 text-sm font-medium text-stone-400">
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock"></iconify-icon> 1.5 Hours</span>
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:shopping-cart"></iconify-icon> Buy Spices</span>
+                        </div>
+                    </div>
+                    <!-- Attraction 3 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative h-80 overflow-hidden rounded-3xl mb-6">
+                            <img src="https://resize-img.sandesh.com/epapercdn.sandesh.com/images/2024/08/31/cLSUH3zwUaybfOuPgCiwnLac0sKlqoaITUk63UXi.jpg?resize=600,315" alt="Dudhsagar Dairy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold uppercase text-amber-600">Industrial</div>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-2">Dudhsagar Dairy</h4>
+                        <p class="text-stone-500 mb-4">One of Asia's largest cooperative dairy plants. Witness the massive milk processing scale.</p>
+                        <div class="flex items-center gap-4 text-sm font-medium text-stone-400">
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:clock"></iconify-icon> 1 Hour</span>
+                            <span class="flex items-center gap-1"><iconify-icon icon="lucide:info"></iconify-icon> Prior Perm. Req.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food & Dining -->
+        <section id="food" class="py-24 bg-stone-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold mb-4">Local Culinary Delights</h2>
+                    <p class="text-stone-600">Mehsana is a paradise for vegetarians, famous for its rich dairy and spice use.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-48 h-48 rounded-full overflow-hidden shrink-0 ring-4 ring-amber-100">
+                            <img src="https://i.ytimg.com/vi/-yqgxNuz9Fo/maxresdefault.jpg" alt="Gujarati Thali" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs font-bold uppercase bg-amber-100 text-amber-700 px-2 py-0.5 rounded">Specialty</span>
+                                <div class="flex text-amber-400"><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon><iconify-icon icon="mdi:star"></iconify-icon></div>
+                            </div>
+                            <h4 class="text-3xl font-bold mb-4">The Mehsani Thali</h4>
+                            <p class="text-stone-600 mb-6">A complete meal featuring Kadhi, Khichdi, multiple Curries, and local Mehsana Basundi (thickened sweet milk).</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-1.5 rounded-full bg-stone-100 text-stone-600 text-sm font-medium italic">Recommended: Gopi Dining Hall</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-stone-900 rounded-[2.5rem] p-8 md:p-12 text-white shadow-xl flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-48 h-48 rounded-full overflow-hidden shrink-0 ring-4 ring-amber-500/20">
+                            <img src="https://img.freepik.com/premium-photo/crispy-fafda-with-sweet-jalebi-is-indian-snack-most-popular-gujarat-selective-focus_466689-71789.jpg?w=2000" alt="Street Food" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs font-bold uppercase bg-white/10 text-amber-400 px-2 py-0.5 rounded">Street Food</span>
+                            </div>
+                            <h4 class="text-3xl font-bold mb-4 italic text-amber-400">Fafda-Jalebi Corner</h4>
+                            <p class="text-stone-400 mb-6">Mehsana's morning heart beats with the crackle of fresh Fafda. Best paired with local spicy papaya sambharo.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-1.5 rounded-full bg-white/5 text-white/70 text-sm font-medium italic">Recommended: Highway Street Outlets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section id="tips" class="py-24 bg-stone-900 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-amber-500/5 -skew-x-12 transform translate-x-1/2"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl font-bold mb-4">Practical Travel Tips</h2>
+                    <p class="text-stone-400">Everything you need to know before you hit the road in Mehsana.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:calendar" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Best Time to Visit</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">October to March is ideal. Avoid the summer heat (April-June) when temperatures cross 40°C.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:car" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Transport Modes</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">Auto-rickshaws are abundant. For nearby sites like Modhera, hiring a private taxi is recommended.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:wallet" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Budget Guide</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">₹1500 - ₹3000 per person per day is sufficient for a comfortable heritage tour with meals.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:luggage" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Packing Essentials</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">Cotton clothes, a hat, sunblock, and comfortable walking shoes for temple complexes.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:shield-check" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Safety & Etiquette</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">Dress modestly in temples. Remove footwear outside. Locals are friendly and mostly speak Gujarati/Hindi.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center shrink-0 border border-amber-500/30">
+                            <iconify-icon icon="lucide:languages" class="text-2xl text-amber-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">Language</h4>
+                            <p class="text-stone-400 text-sm leading-relaxed">Gujarati is the heart tongue. Basic English is understood at main hotels and tourist spots.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking CTA -->
+        <section id="booking" class="py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="bg-amber-500 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden amber-glow">
+                    <div class="relative z-10">
+                        <h2 class="text-5xl font-bold text-stone-900 mb-6">Ready for Your Mehsana Adventure?</h2>
+                        <p class="text-stone-800 text-lg mb-10 max-w-2xl mx-auto font-medium">
+                            Get a personalized 1-day itinerary, book a certified local guide, or arrange your transport with just one click.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="#" id="cta-book-guide" class="bg-stone-900 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-stone-800 transition-all">Hire a Local Guide</a>
+                            <a href="booking.html" id="cta-transport" class="bg-white text-stone-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-stone-100 transition-all">Rent a Private Cab</a>
+                        </div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-black/5 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-stone-900 text-white pt-20 pb-10 border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center text-white">
+                                <iconify-icon icon="lucide:map-pin"></iconify-icon>
+                            </div>
+                            <span class="text-xl font-bold tracking-tight">Mehsana<span class="text-amber-500">Travel</span></span>
+                        </div>
+                        <p class="text-stone-400 text-sm leading-relaxed">
+                            Dedicated to bringing you the finest experiences in North Gujarat's heritage and industrial landscape.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" id="footer-social-fb" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-amber-500 hover:text-stone-900 transition-all"><iconify-icon icon="brandico:facebook"></iconify-icon></a>
+                            <a href="#" id="footer-social-ig" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-amber-500 hover:text-stone-900 transition-all"><iconify-icon icon="brandico:instagram"></iconify-icon></a>
+                            <a href="#" id="footer-social-tw" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-amber-500 hover:text-stone-900 transition-all"><iconify-icon icon="brandico:twitter"></iconify-icon></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                        <ul class="space-y-4 text-stone-400 text-sm">
+                            <li><a href="#home" id="footer-link-home" class="hover:text-amber-500 transition-colors">About Mehsana</a></li>
+                            <li><a href="#attractions" id="footer-link-attractions" class="hover:text-amber-500 transition-colors">Top Sites</a></li>
+                            <li><a href="#food" id="footer-link-food" class="hover:text-amber-500 transition-colors">Food Guide</a></li>
+                            <li><a href="#tips" id="footer-link-tips" class="hover:text-amber-500 transition-colors">Travel Advice</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Support</h4>
+                        <ul class="space-y-4 text-stone-400 text-sm">
+                            <li><a href="#" id="footer-link-faq" class="hover:text-amber-500 transition-colors">FAQs</a></li>
+                            <li><a href="#" id="footer-link-contact" class="hover:text-amber-500 transition-colors">Contact Support</a></li>
+                            <li><a href="#" id="footer-link-privacy" class="hover:text-amber-500 transition-colors">Privacy Policy</a></li>
+                            <li><a href="#" id="footer-link-terms" class="hover:text-amber-500 transition-colors">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Contact</h4>
+                        <ul class="space-y-4 text-stone-400 text-sm">
+                            <li class="flex items-start gap-3">
+                                <iconify-icon icon="lucide:map-pin" class="text-amber-500 mt-1"></iconify-icon>
+                                <span>Mehsana District Tourism Office,<br>Rajmahal Road, Mehsana - 384002</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <iconify-icon icon="lucide:phone" class="text-amber-500"></iconify-icon>
+                                <span>+91 2762 251 000</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <iconify-icon icon="lucide:mail" class="text-amber-500"></iconify-icon>
+                                <span>visit@mehsanatravel.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt-10 border-t border-white/5 text-center text-stone-500 text-xs">
+                    <p>© 2024 Mehsana Tourism Guide. Handcrafted for explorers. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
